@@ -1,0 +1,134 @@
+
+.heading2{
+	font-size: 1.5rem;
+}
+
+
+
+.form{
+	color: #05091b;
+	margin-top: 1rem;
+font-size: 1.3rem;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+label {
+	display: block;
+	margin: 20px 0;
+	cursor: pointer;
+}
+
+
+span {
+		position: relative;
+		top: -.50em;		
+		line-height: 1.3em;	
+		padding-left: 7px;
+    }
+    
+.radio {
+height: 1.8rem;
+width: 1.8rem;
+background: #f4f4f4;
+}
+
+
+.radio:checked {
+    background-color: #0000ff;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    border: 2px solid #5174b8;
+    outline: none;
+    border-radius: 5px;
+    width: 30%;
+    padding: 0.5rem ;
+    text-align: center;
+    color: #5174b8;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #5174b8;
+    color: #fff;
+}
+
+.text{
+    width: 100%;
+    margin: 2rem 0;
+}
+
+.text:focus{
+    outline: none;
+    border: 2px solid #5174b8;
+}
+
+.svgContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.checkmark {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    display: block;
+    stroke-width: 2;
+    stroke: #fff;
+    stroke-miterlimit: 10;
+    box-shadow: inset 0px 0px 0px green;
+    animation: fill .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both;
+  }
+  
+  .checkmark__circle {
+    stroke-dasharray: 166;
+    stroke-dashoffset: 166;
+    stroke-width: 2;
+    stroke-miterlimit: 10;
+    stroke: #7ac142;
+    fill: none;
+    animation: stroke .6s cubic-bezier(0.650, 0.000, 0.450, 1.000) forwards;
+  }
+  
+  .checkmark__check {
+    transform-origin: 50% 50%;
+    stroke-dasharray: 48;
+    stroke-dashoffset: 48;
+    animation: stroke .3s cubic-bezier(0.650, 0.000, 0.450, 1.000) .8s forwards;
+  }
+  
+  @keyframes stroke {
+    100% {
+      stroke-dashoffset: 0;
+    }
+  }
+  
+  @keyframes scale {
+    0%, 100% {
+      transform: none;
+    }
+    50% {
+      transform: scale3d(1.1, 1.1, 1);
+    }
+  }
+  
+  @keyframes fill {
+    100% {
+      box-shadow: inset 0px 0px 0px 15rem #7ac142;
+    }
+  }
+
+  .heading3{
+      text-align: center;
+      font-size: 2rem;
+      color: #7ac142;
+      padding-top: 1rem;
+  }
